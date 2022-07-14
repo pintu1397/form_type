@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+     h1,h2{
+       background-color: rgb(100, 80, 255);
+       width:250px;
+
+      }
+    </style>
+</head>
+<body>
+  <form action="">
+    <h1>Payment Form</h1> 
+    <p>required field ids followed by *
+    </p>
+    <h2>Contact Information</h2>
+    <p>Name: *<input type="text" name="Name" required> </p>
+    <fieldset>
+    <legend>Gender * </legend>
+    <p>
+      
+      Male <input type="radio"name="Gender" id="male" required>
+      Female <input type="radio"name="Gender" id="Female">
+      Other<input type="radio"name="Gender" id="other">
+    </p>
+  </fieldset>
+  <p>Address: <textarea name="address"id="address" cols="80"row="100"></textarea></p>
+
+<p>Email: <input type="email" name="email"id="email" required></p>
+<p>Pincode <input type="number" name="pincode"id="pincode"></p>
+<hr>
+<h2>Payment Information</h2>
+<p>
+  Card Type : *
+  <select name="card_type"id="card_type"required>
+    <option value="">--Select a Card Type--</option>
+    <option value="visa">visa</option>
+    <option value="mastercard">master card</option>
+    <option value="rupay">rupay</option>
+  </select>
+</p>
+<p>
+  Card Number: *<input type="number"name="card number"id="card numberS" required>
+</p>
+<p>
+  Expiration Date: * <input type="date"name="exp_date"id="exp_date"required>
+</p>
+<p>
+  CVV: *<input type="password"name="cvv"id="cvv"required>
+</p>
+<p>
+  <input type="submit" value="pay now">
+</p>
+
+
+
+
+
+  </form>
+  <form action="mailto:pintupn1397@gmail.com"method="post"enctype="text/plain">
+    <label for="">your name</label>
+    <input type="text"name="yourName"value=""><br>
+    
+    <label for="">your email:</label>
+    <input type="email"name="yourEmail"value="">
+   
+    <br>
+    <label for="">do you want to signup in email list?</label><br>
+    <label for="">your massage:</label><br>
+    <textarea name="your massage" id="" cols="30" rows="10"></textarea>
+    <br>
+    <input type="checkbox"name=""value="">
+    <input type="submit"name="">
+  </form>
+ 
+   
+</body>
+</html>
